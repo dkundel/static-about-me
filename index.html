@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dominik Kundel - Developer Evangelist @ Twilio</title>
+  <script src="https://use.fontawesome.com/23db0c51ad.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script>
+    var themes = ['twilio'];
+    var activeTheme = 'default';
+    for (var i = 0; i < themes.length; i++) {
+      if (location.search.indexOf(themes[i]) !== -1) {
+        activeTheme = themes[i];
+      }
+    }
+    document.querySelector('body').className = activeTheme;
+  </script>
+  <main>
+    <div class="left">
+      <h1><span>About Me</span></h1>
+      <h3>Developer Evangelist at</h3>
+      <img class="twilio-logo" src="https://www.twilio.com/marketing/bundles/archetype/img/logo-wordmark--red.svg" alt="Twilio Logo">
+      <h3>Get in touch with me!</h3>
+      <p class="social"><a href="https://twitter.com/dkundel"><i class="fa fa-twitter"></i>@dkundel</a></p>
+      <p class="social"><a href="https://github.com/dkundel"><i class="fa fa-github"></i>dkundel</a></p>
+      <p class="social"><a href="mailto:dkundel@twilio.com"><i class="fa fa-envelope"></i>dkundel@twilio.com</a></p>
+    </div>
+    <div class="right">
+      <img src="me-neutral.png" alt="Picture of Dominik">
+    </div>
+  </main>
+</body>
+</html>
